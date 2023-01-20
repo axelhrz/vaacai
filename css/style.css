@@ -1,0 +1,105 @@
+.navbar {
+    padding-left: 8rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.buttons {
+    align-self: center;
+
+}
+
+.mainimg {
+    position: relative;
+    display: block;
+    width: 90%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: none;
+    border-radius: 15px;
+
+}
+
+.maintext {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    margin-right: 50px;
+}
+
+.searchbar {
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+
+.sbcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.sb-text {
+    margin-bottom: 5vh;
+}
+
+.search-btn {
+    align-self: center;
+}
+
+
+
+.sec2 {
+    border-radius: 15px;
+    background: rgb(224, 221, 221);
+    width: 90%;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec2 .title {
+    padding-top: 20px;
+    padding-left: 55px;
+}
+
+.cards {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card img {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h2,
+p {
+    margin-left: 20px;
+}
+
+.card p {
+    margin-top: -20px;
+    color: grey;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+}
