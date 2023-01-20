@@ -6,6 +6,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+
+
     <title>vaacai</title>
 </head>
 
@@ -17,13 +19,13 @@
 
         <div class="buttons">
             <button>log in</button>
-            <button>sign in</button>
+            <button>sign up</button>
         </div>
     </div>
     <section class="sec1">
         <div><img class="mainimg" src="/img/main.jpg" alt="" /></div>
         <div class="maintext">
-            <h1>Get Inpired. Get Going.</h1>
+            <h1>Get Inpired. Get <br> Going.</h1>
             <p>
                 Join our global community of travellers and create your itinerary today!
             </p>
@@ -45,46 +47,49 @@
         <div class="title">
             <h1>Trending Destinations</h1>
         </div>
-        <div class="cards">
-            <div class="card">
-                <img src="/img/santorini.jpeg" alt="" />
-                <h2 class="card-t">Greece</h2>
-                <p class="card-p">santorini</p>
+        <div class="swiper mySwiper">
+            <div class="cards swiper-wrapper">
+                <div class="card swiper-slide">
+                    <img src="/img/santorini.jpeg" alt="" />
+                    <h2 class="card-t">Greece</h2>
+                    <p class="card-p">santorini</p>
+                </div>
+                <div class="card swiper-slide">
+                    <img src="/img/canada.jpeg" alt="" />
+                    <h2 class="card-t">Canada</h2>
+                    <p class="card-p">santorini</p>
+                </div>
+                <div class="card swiper-slide">
+                    <img src="/img/italy.jpeg" alt="" />
+                    <h2 class="card-t">Italy</h2>
+                    <p class="card-p">santorini</p>
+                </div>
+                <div class="card swiper-slide">
+                    <img src="/img/thailand.jpeg" alt="" />
+                    <h2 class="card-t">Thailand</h2>
+                    <p class="card-p">santorini</p>
+                </div>
+                <div class="card swiper-slide">
+                    <img src="/img/australia.jpeg" alt="" />
+                    <h2 class="card-t">Australia</h2>
+                    <p class="card-p">santorini</p>
+                </div>
+                <div class="card swiper-slide">
+                    <img src="/img/thailand.jpeg" alt="" />
+                    <h2 class="card-t">Thailand</h2>
+                    <p class="card-p">santorini</p>
+                </div>
+                <div class="card swiper-slide">
+                    <img src="/img/thailand.jpeg" alt="" />
+                    <h2 class="card-t">Thailand</h2>
+                    <p class="card-p">santorini</p>
+                </div>
             </div>
-            <div class="card">
-                <img src="/img/canada.jpeg" alt="" />
-                <h2 class="card-t">Canada</h2>
-                <p class="card-p">santorini</p>
-            </div>
-            <div class="card">
-                <img src="/img/italy.jpeg" alt="" />
-                <h2 class="card-t">Italy</h2>
-                <p class="card-p">santorini</p>
-            </div>
-            <div class="card">
-                <img src="/img/thailand.jpeg" alt="" />
-                <h2 class="card-t">Thailand</h2>
-                <p class="card-p">santorini</p>
-            </div>
-            <div class="card">
-                <img src="/img/australia.jpeg" alt="" />
-                <h2 class="card-t">Australia</h2>
-                <p class="card-p">santorini</p>
-            </div>
-            <div class="card">
-                <img src="/img/thailand.jpeg" alt="" />
-                <h2 class="card-t">Thailand</h2>
-                <p class="card-p">santorini</p>
-            </div>
-            <div class="card">
-                <img src="/img/thailand.jpeg" alt="" />
-                <h2 class="card-t">Thailand</h2>
-                <p class="card-p">santorini</p>
-            </div>
+
         </div>
         <div>
-            <button class="arrowl"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="arrowr"><i class="fa-solid fa-arrow-right"></i></button>
+            <button class="arrowl swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="arrowr swiper-button-next"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </section>
 
@@ -94,6 +99,40 @@
             <p>Get off the grid in a jungle village or stay at an award-winning five-star boutique beach resort.</p>
         </div>
     </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                360: {
+                    slidesPerView: 1,
+
+                },
+                540: {
+                    slidesPerView: 2,
+
+                },
+                1200: {
+                    slidesPerView: 3.5,
+
+                },
+                1500: {
+                    slidesPerView: 5,
+
+                },
+                840: {
+                    slidesPerView: 2,
+
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
