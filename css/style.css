@@ -56,9 +56,22 @@
     align-self: center;
 }
 
+.search-btn button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(0, 68, 255);
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ---------------------section2 */
 .sec2 {
+    position: relative;
     border-radius: 15px;
-    background: rgb(224, 221, 221);
+    background: rgb(228, 227, 227);
     width: 90%;
     margin-top: 150px;
     margin-left: auto;
@@ -71,21 +84,19 @@
 }
 
 .cards {
-    margin-left: 25px;
-    margin-right: 25px;
     overflow-x: hidden;
     padding-bottom: 20px;
     display: flex;
 }
 
 .card img {
-    width: 230px;
+    width: 250px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.card h2,
-p {
+.card-t,
+.card-p {
     margin-left: 20px;
 }
 
@@ -95,8 +106,36 @@ p {
 }
 
 .card {
-    margin-left: 25px;
-    margin-right: 25px;
+    cursor: pointer;
+    margin-left: 50px;
     background: white;
     border-radius: 10px;
+}
+
+.sec2 .arrowl {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+}
+
+.sec2 .arrowr {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+}
+
+.sec2 .arrowl,
+.arrowr {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+/* ---------------------section3 */
+
+.sec3 .title {
+    margin-top: 100px;
+    text-align: center;
 }
