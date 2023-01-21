@@ -9,11 +9,9 @@
 .buttons {
     align-self: center;
     margin-right: 50px;
-
 }
 
 .buttons :nth-child(1) {
-
     margin-right: 25px;
     padding: 10px;
     border-radius: 20px;
@@ -24,7 +22,6 @@
     cursor: pointer;
     padding: 10px;
     border-radius: 20px;
-
 }
 
 .mainimg {
@@ -89,22 +86,29 @@
     margin-bottom: 5vh;
 }
 
-.search-btn {
-    align-self: center;
+.search-btn:hover>input {
+    width: 150px;
 }
 
-.search-btn button {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    color: white;
+.search-btn {
+    align-self: center;
+    padding: 10px 15px 10px 10px;
+    border-radius: 20px;
     background-color: rgb(0, 68, 255);
     border: none;
     cursor: pointer;
 }
 
+.search-btn input {
+    background-color: rgb(0, 68, 255);
+    border: none;
+    width: 0px;
+    transition: 0.4s ease;
+}
+
 
 /* ---------------------section2 */
+
 .sec2 {
     overflow-x: hidden;
     position: relative;
@@ -141,7 +145,6 @@
     margin-top: -20px;
     color: grey;
 }
-
 
 .card {
     cursor: pointer;
